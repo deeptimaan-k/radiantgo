@@ -1,0 +1,106 @@
+# Development Docker Compose with hot reloading and development tools
+version: '3.8'
+
+services:
+  # MongoDB Database (same as production)
+  mongo:
+    image: mongo:7
+    container_name: radiantgo-mongo-dev
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: radiantgo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_dev_data:/data/db
+      - ./backend/database/init:/docker-entrypoint-initdb.d:ro
+    networks:
+      - radiantgo-dev-network
+
+  # Redis Cache (same as production)
+  redis:
+    image: redis:7-alpine
+    container_name: radiantgo-redis-dev
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_dev_data:/data
+    networks:
+      - radiantgo-dev-network
+
+  # RabbitMQ Message Broker (same as production)
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: radiantgo-rabbitmq-dev
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_dev_data:/var/lib/rabbitmq
+    networks:
+      - radiantgo-dev-network
+
+  # Backend Development Service with hot reloading
+  backend-dev:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: radiantgo-backend-dev
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:password@mongo:27017/radiantgo?authSource=admin
+      REDIS_URL: redis://redis:6379
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672
+      FRONTEND_URL: http://localhost:3000
+    ports:
+      - "5000:5000"
+      - "9229:9229"  # Node.js debugger port
+    depends_on:
+      - mongo
+      - redis
+      - rabbitmq
+    networks:
+      - radiantgo-dev-network
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - ./backend/logs:/app/logs
+
+  # Frontend Development Service with hot reloading
+  frontend-dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: radiantgo-frontend-dev
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: http://localhost:5000
+    ports:
+      - "3000:3000"
+      - "24678:24678"  # Vite HMR port
+    depends_on:
+      - backend-dev
+    networks:
+      - radiantgo-dev-network
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  mongo_dev_data:
+  redis_dev_data:
+  rabbitmq_dev_data:
+
+networks:
+  radiantgo-dev-network:
+    driver: bridge
