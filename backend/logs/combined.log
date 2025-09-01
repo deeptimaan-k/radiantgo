@@ -1,0 +1,190 @@
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:35:34.341Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:35:34.343Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:35:34 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.880 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:35:34.457Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:35:34 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.360 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:35:34.913Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:35:36 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.185 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:35:36.703Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:35:44 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.175 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:35:44.903Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:35:53 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.140 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:35:53.113Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:36:01 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.215 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:36:01.324Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:46:16.738Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:46:16.741Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:46:16 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.860 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:46:16.867Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:46:17 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.295 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:46:17.723Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:46:25 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.170 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:46:25.924Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:46:34 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.120 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:46:34.123Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:46:42 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.115 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:46:42.333Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:47:01.624Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:47:01.626Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:01 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 1.130 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:01.643Z"}
+{"level":"info","message":"Received SIGTERM, starting graceful shutdown...","service":"radiantgo-api","timestamp":"2025-08-31T14:47:03.310Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:47:15.242Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:47:15.248Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:15 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.935 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:15.267Z"}
+{"level":"info","message":"Received SIGINT, starting graceful shutdown...","service":"radiantgo-api","timestamp":"2025-08-31T14:47:15.542Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:47:19.770Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:47:19.774Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:19 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 1.165 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:19.796Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:21 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.550 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:21.116Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:26 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.255 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:26.106Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:34 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.170 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:34.315Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:14:47:42 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.115 ms","service":"radiantgo-api","timestamp":"2025-08-31T14:47:42.515Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:50:54.482Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:50:54.483Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T14:50:55.333Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T14:50:55.341Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T14:50:55.346Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T14:50:55.347Z"}
+{"level":"info","message":"Received SIGINT, starting graceful shutdown...","service":"radiantgo-api","timestamp":"2025-08-31T14:51:49.213Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T14:58:20.979Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T14:58:20.980Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T14:58:24.678Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T14:58:24.687Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T14:58:24.691Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T14:58:24.692Z"}
+{"level":"info","message":"Received SIGTERM, starting graceful shutdown...","service":"radiantgo-api","timestamp":"2025-08-31T15:00:28.615Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T15:00:29.365Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T15:00:29.366Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T15:00:30.137Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T15:00:30.143Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T15:00:30.146Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T15:00:30.147Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T15:03:53.014Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T15:03:53.015Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T15:03:55.790Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T15:03:55.794Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T15:03:55.796Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T15:03:55.797Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T17:11:08.114Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T17:11:08.115Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T17:11:08.991Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T17:11:09.001Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T17:11:09.015Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T17:11:09.016Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.775Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.776Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.783Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.785Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.787Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-08-31T17:13:22.788Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T18:03:04.201Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T18:03:04.203Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:03:04 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 1.005 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:03:04.332Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:03:07 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.530 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:03:07.792Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:03:16 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.380 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:03:16.002Z"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:03:25 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.815 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:03:25.482Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T18:14:42.510Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T18:14:42.511Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":1,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:14:42.640Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:14:42 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 1.480 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:14:42.646Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:14:43.592Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:14:43 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.685 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:14:43.594Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":1,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:14:50.735Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:14:50 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.385 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:14:50.735Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:14:51.794Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:14:51 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.510 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:14:51.796Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:14:59.999Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:15:00 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.375 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:15:00.000Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T18:15:08.202Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:18:15:08 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.345 ms","service":"radiantgo-api","timestamp":"2025-08-31T18:15:08.203Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-08-31T21:03:55.529Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-08-31T21:03:55.531Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":1,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:03:55.659Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:03:55 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 1.390 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:03:55.662Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:03:57.206Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:03:57 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.540 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:03:57.207Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:04:02.499Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:04:02 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.385 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:04:02.500Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:04:05.408Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:04:05 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.485 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:04:05.409Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":0,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:04:13.610Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:04:13 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.255 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:04:13.611Z"}
+{"ip":"127.0.0.1","level":"warn","message":"Error response:","method":"GET","responseTime":1,"service":"radiantgo-api","statusCode":404,"timestamp":"2025-08-31T21:04:21.816Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"127.0.0.1 - - [31/Aug/2025:21:04:21 +0000] \"GET / HTTP/1.1\" 404 169 \"https://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\" 0.755 ms","service":"radiantgo-api","timestamp":"2025-08-31T21:04:21.817Z"}
+{"level":"info","message":"RadiantGo API server is running on port 3000","service":"radiantgo-api","timestamp":"2025-09-01T08:09:02.285Z"}
+{"level":"info","message":"Environment: development","service":"radiantgo-api","timestamp":"2025-09-01T08:09:02.286Z"}
+{"level":"info","message":"Connected to MongoDB","service":"radiantgo-api","timestamp":"2025-09-01T08:09:05.805Z"}
+{"level":"info","message":"Redis Client Connected","service":"radiantgo-api","timestamp":"2025-09-01T08:09:05.817Z"}
+{"level":"info","message":"Redis Client Ready","service":"radiantgo-api","timestamp":"2025-09-01T08:09:05.823Z"}
+{"level":"info","message":"Connected to Redis","service":"radiantgo-api","timestamp":"2025-09-01T08:09:05.823Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":3,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:09:48.174Z","url":"/logout","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/auth/logout 200 4.635 ms - 52","service":"radiantgo-api","timestamp":"2025-09-01T08:09:48.177Z"}
+{"email":"radiant2522@gmail.com","level":"info","message":"Login attempt:","service":"radiantgo-api","timestamp":"2025-09-01T08:09:49.325Z"}
+{"level":"info","message":"User logged in: radiant2522@gmail.com","service":"radiantgo-api","timestamp":"2025-09-01T08:09:49.673Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":351,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:09:49.675Z","url":"/login","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/auth/login 200 351.240 ms - 524","service":"radiantgo-api","timestamp":"2025-09-01T08:09:49.675Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":1,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:09:57.311Z","url":"/logout","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/auth/logout 200 2.204 ms - 52","service":"radiantgo-api","timestamp":"2025-09-01T08:09:57.313Z"}
+{"email":"radiant2522@gmail.com","level":"info","message":"Login attempt:","service":"radiantgo-api","timestamp":"2025-09-01T08:10:00.910Z"}
+{"level":"info","message":"User logged in: radiant2522@gmail.com","service":"radiantgo-api","timestamp":"2025-09-01T08:10:01.280Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":371,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:10:01.280Z","url":"/login","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/auth/login 200 371.362 ms - 524","service":"radiantgo-api","timestamp":"2025-09-01T08:10:01.281Z"}
+{"departure_date":"2025-09-01","destination":"HYD","level":"info","message":"Route search request:","origin":"BOM","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.406Z"}
+{"level":"debug","message":"Cache miss: routes:BOM:HYD:2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.415Z"}
+{"date":"2025-09-01","destination":"HYD","endOfDay":"2025-09-01T18:29:59.999Z","level":"debug","message":"Searching flights:","origin":"BOM","service":"radiantgo-api","startOfDay":"2025-08-31T18:30:00.000Z","timestamp":"2025-09-01T08:10:16.415Z"}
+{"level":"info","message":"Found 0 flights for route BOM-HYD on 2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.457Z"}
+{"level":"debug","message":"Cache set: routes:BOM:HYD:2025-09-01 (TTL: 1800s)","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.461Z"}
+{"level":"debug","message":"Performance: FlightService.searchFlights took 53ms","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.461Z"}
+{"level":"debug","message":"Found 1 intermediate airports for BOM","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.501Z"}
+{"level":"info","message":"Found 0 total routes (0 direct, 0 transit)","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.584Z"}
+{"level":"debug","message":"Performance: FlightService.getRoutes took 176ms","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.584Z"}
+{"level":"info","message":"Found 0 routes for BOM -> HYD on 2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.585Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":231,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:10:16.586Z","url":"/routes?origin=BOM&destination=HYD&departure_date=2025-09-01","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/flights/routes?origin=BOM&destination=HYD&departure_date=2025-09-01 200 232.299 ms - 36","service":"radiantgo-api","timestamp":"2025-09-01T08:10:16.588Z"}
+{"departure_date":"2025-09-01","destination":"IXU","level":"info","message":"Route search request:","origin":"JLR","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.318Z"}
+{"level":"debug","message":"Cache miss: routes:JLR:IXU:2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.324Z"}
+{"date":"2025-09-01","destination":"IXU","endOfDay":"2025-09-01T18:29:59.999Z","level":"debug","message":"Searching flights:","origin":"JLR","service":"radiantgo-api","startOfDay":"2025-08-31T18:30:00.000Z","timestamp":"2025-09-01T08:10:51.325Z"}
+{"level":"info","message":"Found 1 flights for route JLR-IXU on 2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.368Z"}
+{"level":"debug","message":"Cache set: routes:JLR:IXU:2025-09-01 (TTL: 1800s)","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.370Z"}
+{"level":"debug","message":"Performance: FlightService.searchFlights took 49ms","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.370Z"}
+{"level":"debug","message":"Found 1 intermediate airports for JLR","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.409Z"}
+{"level":"info","message":"Found 1 total routes (1 direct, 0 transit)","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.409Z"}
+{"level":"debug","message":"Performance: FlightService.getRoutes took 88ms","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.409Z"}
+{"level":"info","message":"Found 1 routes for JLR -> IXU on 2025-09-01","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.409Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":147,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:10:51.410Z","url":"/routes?origin=JLR&destination=IXU&departure_date=2025-09-01","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/flights/routes?origin=JLR&destination=IXU&departure_date=2025-09-01 200 147.203 ms - 436","service":"radiantgo-api","timestamp":"2025-09-01T08:10:51.413Z"}
+{"body":{"departure_date":"2025-09-01","destination":"IXU","origin":"JLR","pieces":1,"route_id":"direct-AlgJ-JTPDE","weight_kg":10},"level":"info","message":"Creating booking:","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.107Z","user":"radiant2522@gmail.com"}
+{"level":"debug","message":"Cache miss: idempotency:booking-1756714283034-0.5298090835603475","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.111Z"}
+{"departure_date":"2025-09-01","destination":"IXU","level":"info","message":"Creating booking with data:","origin":"JLR","pieces":1,"route_id":"direct-AlgJ-JTPDE","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.113Z","weight_kg":10}
+{"level":"debug","message":"Extracting flight IDs from route:","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.114Z"}
+{"level":"debug","message":"Direct route flight ID:","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.114Z"}
+{"0":"AlgJ-JTPDE","level":"debug","message":"Extracted flight IDs:","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.115Z"}
+{"level":"debug","message":"Cache set: booking:RGMBFM-EC2 (TTL: 3600s)","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.236Z"}
+{"level":"info","message":"Booking created: RGMBFM-EC2 for route JLR-IXU","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.237Z"}
+{"level":"debug","message":"Performance: BookingService.createBooking took 124ms","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.237Z"}
+{"level":"debug","message":"Cache set: idempotency:booking-1756714283034-0.5298090835603475 (TTL: 86400s)","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.240Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":188,"service":"radiantgo-api","statusCode":201,"timestamp":"2025-09-01T08:11:23.241Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/bookings 201 188.081 ms - 577","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.242Z"}
+{"level":"debug","message":"Cache hit: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.322Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":44,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:11:23.322Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 200 43.938 ms - 577","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.322Z"}
+{"level":"debug","message":"Cache hit: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.367Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":44,"service":"radiantgo-api","statusCode":304,"timestamp":"2025-09-01T08:11:23.368Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 304 45.176 ms - -","service":"radiantgo-api","timestamp":"2025-09-01T08:11:23.370Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":86,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:11:36.521Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings 200 85.703 ms - 1324","service":"radiantgo-api","timestamp":"2025-09-01T08:11:36.522Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":95,"service":"radiantgo-api","statusCode":304,"timestamp":"2025-09-01T08:11:36.618Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings 304 95.576 ms - -","service":"radiantgo-api","timestamp":"2025-09-01T08:11:36.618Z"}
+{"level":"debug","message":"Cache deleted: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:11:43.038Z"}
+{"level":"info","message":"Booking RGMBFM-EC2 status updated to DEPARTED at JLR","service":"radiantgo-api","timestamp":"2025-09-01T08:11:43.039Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":156,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:11:43.042Z","url":"/RGMBFM-EC2/depart","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/bookings/RGMBFM-EC2/depart 200 157.071 ms - 745","service":"radiantgo-api","timestamp":"2025-09-01T08:11:43.043Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":86,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:11:43.136Z","url":"/","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings 200 86.982 ms - 1492","service":"radiantgo-api","timestamp":"2025-09-01T08:11:43.137Z"}
+{"level":"debug","message":"Cache miss: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:11:55.739Z"}
+{"level":"debug","message":"Cache set: booking:RGMBFM-EC2 (TTL: 3600s)","service":"radiantgo-api","timestamp":"2025-09-01T08:11:55.782Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":96,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:11:55.783Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 200 96.507 ms - 745","service":"radiantgo-api","timestamp":"2025-09-01T08:11:55.784Z"}
+{"level":"debug","message":"Cache hit: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:11:55.828Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":44,"service":"radiantgo-api","statusCode":304,"timestamp":"2025-09-01T08:11:55.829Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 304 43.598 ms - -","service":"radiantgo-api","timestamp":"2025-09-01T08:11:55.829Z"}
+{"level":"debug","message":"Cache deleted: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:12:02.981Z"}
+{"level":"info","message":"Booking RGMBFM-EC2 status updated to ARRIVED at IXU","service":"radiantgo-api","timestamp":"2025-09-01T08:12:02.982Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"POST","responseTime":158,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:12:02.986Z","url":"/RGMBFM-EC2/arrive","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"POST /api/bookings/RGMBFM-EC2/arrive 200 158.163 ms - 997","service":"radiantgo-api","timestamp":"2025-09-01T08:12:02.987Z"}
+{"level":"debug","message":"Cache miss: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:12:06.159Z"}
+{"level":"debug","message":"Cache set: booking:RGMBFM-EC2 (TTL: 3600s)","service":"radiantgo-api","timestamp":"2025-09-01T08:12:06.203Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":96,"service":"radiantgo-api","statusCode":200,"timestamp":"2025-09-01T08:12:06.204Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 200 96.180 ms - 997","service":"radiantgo-api","timestamp":"2025-09-01T08:12:06.205Z"}
+{"level":"debug","message":"Cache hit: booking:RGMBFM-EC2","service":"radiantgo-api","timestamp":"2025-09-01T08:12:06.249Z"}
+{"ip":"::1","level":"debug","message":"Request completed:","method":"GET","responseTime":44,"service":"radiantgo-api","statusCode":304,"timestamp":"2025-09-01T08:12:06.250Z","url":"/RGMBFM-EC2","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"}
+{"level":"info","message":"GET /api/bookings/RGMBFM-EC2 304 44.288 ms - -","service":"radiantgo-api","timestamp":"2025-09-01T08:12:06.250Z"}

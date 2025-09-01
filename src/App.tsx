@@ -1,84 +1,81 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Header } from './components/Header';
-import { HomePage } from './pages/HomePage';
-import { CreateBookingPage } from './pages/CreateBookingPage';
-import { BookingDetailPage } from './pages/BookingDetailPage';
-import { SearchResultsPage } from './pages/SearchResultsPage';
+import { Toaster } from 'react-hot-toast';
+import AuthProvider from './components/AuthProvider';
+import ProtectedRoute from './components/ProtectedRoute';
+import ErrorBoundary from './components/ErrorBoundary';
+import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
+import CreateBooking from './pages/CreateBooking';
+import TrackBooking from './pages/TrackBooking';
+import Analytics from './pages/Analytics';
+import FleetManagement from './pages/FleetManagement';
+import CustomerManagement from './pages/CustomerManagement';
+import Reports from './pages/Reports';
+import Settings from './pages/Settings';
+import AdminPanel from './components/AdminPanel';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-gradient-radiant relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-
-        {/* Floating Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <motion.div
-            animate={{
-              y: [0, -20, 0],
-              rotate: [0, 5, 0],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"
-          />
-          <motion.div
-            animate={{
-              y: [0, 30, 0],
-              rotate: [0, -5, 0],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 2
-            }}
-            className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl"
-          />
-          <motion.div
-            animate={{
-              y: [0, -15, 0],
-              x: [0, 10, 0],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 4
-            }}
-            className="absolute bottom-20 left-1/4 w-24 h-24 bg-white/8 rounded-full blur-xl"
-          />
-        </div>
-
-        <Header />
-        
-        <AnimatePresence mode="wait">
-          <motion.main
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="relative z-10 pt-20 min-h-screen"
-          >
+    <ErrorBoundary>
+      <AuthProvider>
+        <Router>
+          <div className="min-h-screen bg-gray-50">
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/create-booking" element={<CreateBookingPage />} />
-              <Route path="/booking/:refId" element={<BookingDetailPage />} />
-              <Route path="/search" element={<SearchResultsPage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/*" element={
+                <ProtectedRoute>
+                  <Navbar />
+                  <main className="pb-12">
+                    <Routes>
+                      <Route path="/" element={<Dashboard />} />
+                      <Route path="/dashboard" element={<Dashboard />} />
+                      <Route path="/create" element={<CreateBooking />} />
+                      <Route path="/track" element={<TrackBooking />} />
+                      <Route path="/analytics" element={<Analytics />} />
+                      <Route path="/fleet" element={<FleetManagement />} />
+                      <Route path="/customers" element={<CustomerManagement />} />
+                      <Route path="/reports" element={<Reports />} />
+                      <Route path="/settings" element={<Settings />} />
+                      <Route path="/admin" element={<AdminPanel />} />
+                    </Routes>
+                  </main>
+                </ProtectedRoute>
+              } />
             </Routes>
-          </motion.main>
-        </AnimatePresence>
-      </div>
-    </Router>
+
+            <Toaster
+              position="top-right"
+              toastOptions={{
+                duration: 4000,
+                style: {
+                  background: '#ffffff',
+                  color: '#374151',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '0.75rem',
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                },
+                success: {
+                  iconTheme: {
+                    primary: '#10b981',
+                    secondary: '#ffffff',
+                  },
+                },
+                error: {
+                  iconTheme: {
+                    primary: '#ef4444',
+                    secondary: '#ffffff',
+                  },
+                },
+              }}
+            />
+          </div>
+        </Router>
+      </AuthProvider>
+    </ErrorBoundary>
   );
 }
 

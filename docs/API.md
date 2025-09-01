@@ -2,294 +2,307 @@
 
 ## Base URL
 ```
-http://localhost:5000/api
+http://localhost:3000/api
 ```
 
-## Error Handling
-All errors follow RFC 7807 Problem Details format:
+## Authentication
+All API endpoints (except auth endpoints) require authentication via Bearer token.
 
+```http
+Authorization: Bearer <your-jwt-token>
+```
+
+## Response Format
+All responses follow a consistent format:
+
+### Success Response
 ```json
 {
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Validation Error",
-  "status": 400,
-  "detail": "Origin and destination cannot be the same",
-  "instance": "/api/routes",
-  "timestamp": "2025-01-15T10:30:00Z"
+  "success": true,
+  "data": <response_data>,
+  "count": <optional_count>
 }
 ```
 
-## Rate Limiting
-- **Route searches**: 30 requests per minute
-- **Booking creation**: 10 requests per minute
-- **Status updates**: Protected by Redis locks
-
-## Concurrency Control
-All booking status updates use Redis distributed locks to prevent race conditions.
-
-## Message Publishing
-Status changes trigger RabbitMQ events for notifications and tracking.
-
-## Endpoints
-
-### Routes
-
-#### GET /routes
-Find direct flights and 1-hop routes with Redis caching.
-
-**Query Parameters:**
-- `origin` (required) - 3-letter airport code
-- `destination` (required) - 3-letter airport code  
-- `date` (required) - ISO date (YYYY-MM-DD)
-
-**Example:**
+### Error Response (Problem JSON)
+```json
+{
+  "type": "https://radiantgo.com/errors/ERROR_TYPE",
+  "title": "Error Title",
+  "status": 400,
+  "detail": "Detailed error message",
+  "instance": "/api/endpoint",
+  "timestamp": "2024-01-15T10:30:00Z"
+}
 ```
-GET /api/routes?origin=DEL&destination=BLR&date=2025-01-20
+
+## Authentication Endpoints
+
+### Register User
+```http
+POST /api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
 ```
 
 **Response:**
 ```json
 {
-  "direct": [
+  "success": true,
+  "data": {
+    "user": {
+      "_id": "user_id",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "user",
+      "created_at": "2024-01-15T10:30:00Z"
+    },
+    "token": "jwt_token_here"
+  }
+}
+```
+
+### Login User
+```http
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+```
+
+### Get User Profile
+```http
+GET /api/auth/profile
+Authorization: Bearer <token>
+```
+
+### Logout
+```http
+POST /api/auth/logout
+Authorization: Bearer <token>
+```
+
+## Flight Endpoints
+
+### Search Routes (Direct + Transit)
+```http
+GET /api/flights/routes?origin=DEL&destination=BOM&departure_date=2024-01-15
+Authorization: Bearer <token>
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": [
     {
+      "id": "direct-flight123",
       "type": "direct",
       "flights": [
         {
-          "_id": "2",
-          "flight_number": "RG002",
-          "airline": "RadiantGo Airlines",
+          "flight_id": "flight123",
+          "flight_number": "AI101",
+          "airline": "Air India",
+          "departure": "2024-01-15T10:00:00Z",
+          "arrival": "2024-01-15T12:30:00Z",
           "origin": "DEL",
-          "destination": "BLR",
-          "departure_ts": "2025-01-20T08:00:00Z",
-          "arrival_ts": "2025-01-20T10:30:00Z"
+          "destination": "BOM"
         }
       ],
       "total_duration": 150,
-      "total_distance": 1366
-    }
-  ],
-  "oneHop": [
+      "total_cost": 250
+    },
     {
-      "type": "one-hop",
-      "flights": [...],
-      "connection_airport": "BOM",
-      "connection_time": 120,
-      "total_duration": 330,
-      "total_distance": 1227
+      "id": "transit-flight456-flight789",
+      "type": "one_transit",
+      "flights": [
+        {
+          "flight_id": "flight456",
+          "flight_number": "AI201",
+          "airline": "Air India",
+          "departure": "2024-01-15T08:00:00Z",
+          "arrival": "2024-01-15T10:00:00Z",
+          "origin": "DEL",
+          "destination": "HYD"
+        },
+        {
+          "flight_id": "flight789",
+          "flight_number": "AI202",
+          "airline": "Air India",
+          "departure": "2024-01-15T12:00:00Z",
+          "arrival": "2024-01-15T14:00:00Z",
+          "origin": "HYD",
+          "destination": "BOM"
+        }
+      ],
+      "total_duration": 360,
+      "total_cost": 350
     }
   ],
-  "meta": {
-    "totalDirectRoutes": 1,
-    "totalOneHopRoutes": 1,
-    "searchTime": "2025-01-15T10:30:00Z",
-    "cached": false
-  }
+  "count": 2
 }
 ```
 
-### Flights
-
-#### GET /flights
-Get all flights or filter by route.
-
-**Query Parameters:**
-- `origin` (optional) - Origin airport code
-- `destination` (optional) - Destination airport code
-
-**Response:**
-```json
-[
-  {
-    "_id": "1",
-    "flight_number": "RG001",
-    "airline": "RadiantGo Airlines",
-    "origin": "NYC",
-    "destination": "LAX",
-    "departure_ts": "2025-01-15T10:00:00Z",
-    "arrival_ts": "2025-01-15T16:00:00Z",
-    "created_at": "2025-01-14T08:00:00Z",
-    "updated_at": "2025-01-14T08:00:00Z"
-  }
-]
+### Search Direct Flights Only
+```http
+GET /api/flights/route?origin=DEL&destination=BOM&date=2024-01-15
+Authorization: Bearer <token>
 ```
 
-#### POST /flights
-Create a new flight.
-
-**Request Body:**
-```json
-{
-  "flight_number": "RG001",
-  "airline": "RadiantGo Airlines", 
-  "origin": "NYC",
-  "destination": "LAX",
-  "departure_ts": "2025-01-15T10:00:00Z",
-  "arrival_ts": "2025-01-15T16:00:00Z"
-}
+### Get Flight by ID
+```http
+GET /api/flights/:flightId
+Authorization: Bearer <token>
 ```
 
-### Bookings
+## Booking Endpoints
 
-#### POST /bookings
-Create a new booking.
+### Create Booking
+```http
+POST /api/bookings
+Authorization: Bearer <token>
+Content-Type: application/json
+Idempotency-Key: unique-key-123
 
-**Request Body:**
-```json
 {
   "origin": "DEL",
-  "destination": "BLR",
-  "pieces": 5,
-  "weight_kg": 125.5,
-  "customer_name": "John Doe",
-  "customer_email": "john@example.com"
+  "destination": "BOM",
+  "pieces": 2,
+  "weight_kg": 5.5,
+  "route_id": "direct-flight123"
 }
 ```
-
-#### GET /bookings/:ref_id
-Get booking details with complete event timeline.
 
 **Response:**
 ```json
 {
-  "booking": {
-    "_id": "1",
-    "ref_id": "RG123ABC456",
+  "success": true,
+  "data": {
+    "ref_id": "RG12345678",
     "origin": "DEL",
-    "destination": "BLR",
-    "pieces": 5,
-    "weight_kg": 125.5,
-    "status": "DEPARTED",
-    "created_at": "2025-01-15T09:00:00Z",
-    "updated_at": "2025-01-15T10:00:00Z"
-  },
-  "timeline": [
-    {
-      "_id": "evt1",
-      "booking_id": "1",
-      "type": "BOOKING_CREATED",
-      "location": "DEL",
-      "at_ts": "2025-01-15T09:00:00Z",
-      "payload": { "initial_status": "BOOKED" }
-    },
-    {
-      "_id": "evt2", 
-      "type": "STATUS_CHANGED_DEPARTED",
-      "location": "DEL Airport",
-      "at_ts": "2025-01-15T10:00:00Z",
-      "payload": { "previous_status": "BOOKED", "new_status": "DEPARTED" }
-    }
-  ],
-  "meta": {
-    "totalEvents": 2,
-    "lastUpdated": "2025-01-15T10:00:00Z",
-    "canCancel": true,
-    "nextValidStatuses": ["ARRIVED", "CANCELLED"]
+    "destination": "BOM",
+    "pieces": 2,
+    "weight_kg": 5.5,
+    "status": "BOOKED",
+    "flight_ids": ["flight123"],
+    "events": [
+      {
+        "id": "event1",
+        "type": "BOOKING_CREATED",
+        "status": "BOOKED",
+        "location": "DEL",
+        "timestamp": "2024-01-15T10:30:00Z",
+        "description": "Booking created for 2 pieces (5.5kg) from DEL to BOM"
+      }
+    ],
+    "created_at": "2024-01-15T10:30:00Z",
+    "updated_at": "2024-01-15T10:30:00Z"
   }
 }
 ```
 
-#### POST /bookings/:ref_id/depart
-Update booking status to DEPARTED.
-
-**Request Body:**
-```json
-{
-  "location": "DEL Airport",
-  "flight_id": "flight123",
-  "notes": "Cargo loaded successfully"
-}
+### Get Booking by Reference ID
+```http
+GET /api/bookings/:ref_id
+Authorization: Bearer <token>
 ```
 
-#### POST /bookings/:ref_id/arrive
-Update booking status to ARRIVED.
+### Update Booking Status
 
-**Request Body:**
-```json
+#### Mark as Departed
+```http
+POST /api/bookings/:ref_id/depart
+Authorization: Bearer <token>
+Content-Type: application/json
+
 {
-  "location": "BLR Airport",
-  "notes": "Cargo arrived in good condition"
-}
-```
-
-#### POST /bookings/:ref_id/deliver
-Update booking status to DELIVERED.
-
-**Request Body:**
-```json
-{
-  "location": "Customer Warehouse",
-  "notes": "Delivered to customer"
-}
-```
-
-#### POST /bookings/:ref_id/cancel
-Cancel booking (only allowed if status is BOOKED or DEPARTED).
-
-**Request Body:**
-```json
-{
-  "location": "DEL Airport",
-  "notes": "Cancelled due to customer request"
-}
-```
-
-### Events
-
-#### GET /events/booking/:bookingId
-Get all events for a specific booking.
-
-**Response:**
-```json
-[
-  {
-    "_id": "1",
-    "booking_id": "booking123",
-    "type": "BOOKING_CREATED",
-    "location": "NYC",
-    "flight_id": null,
-    "at_ts": "2025-01-14T09:00:00Z",
-    "payload": {
-      "initial_status": "BOOKED"
-    },
-    "created_at": "2025-01-14T09:00:00Z"
+  "location": "DEL",
+  "flight_info": {
+    "flight_number": "AI101",
+    "airline": "Air India"
   }
-]
+}
 ```
 
-## Status Codes
+#### Mark as Arrived
+```http
+POST /api/bookings/:ref_id/arrive
+Authorization: Bearer <token>
+Content-Type: application/json
 
-- `200` - Success
-- `201` - Created
-- `400` - Bad Request
-- `404` - Not Found
-- `500` - Internal Server Error
-
-## Status Flow
-
+{
+  "location": "BOM",
+  "flight_info": {
+    "flight_number": "AI101",
+    "airline": "Air India"
+  }
+}
 ```
-BOOKED → DEPARTED → ARRIVED → DELIVERED
-   ↓         ↓
-CANCELLED  CANCELLED
+
+#### Mark as Delivered
+```http
+POST /api/bookings/:ref_id/deliver
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "location": "BOM"
+}
 ```
 
-Valid transitions:
-- From BOOKED: DEPARTED, CANCELLED
-- From DEPARTED: ARRIVED, CANCELLED
-- From ARRIVED: DELIVERED
-- DELIVERED and CANCELLED are final states
+#### Cancel Booking
+```http
+POST /api/bookings/:ref_id/cancel
+Authorization: Bearer <token>
+Content-Type: application/json
 
-## Caching Strategy
+{
+  "reason": "Customer request"
+}
+```
 
-- **Route searches**: Cached for 5 minutes using Redis
-- **Flight data**: Cached for 1 hour
-- **Booking events**: Real-time, no caching
+## Status Transitions
 
-## Message Queue Events
+Valid status transitions:
+- `BOOKED` → `DEPARTED` or `CANCELLED`
+- `DEPARTED` → `ARRIVED` or `CANCELLED`
+- `ARRIVED` → `DELIVERED` or `CANCELLED`
+- `DELIVERED` → Terminal state
+- `CANCELLED` → Terminal state
 
-Published to RabbitMQ exchange `booking.events`:
+**Special Rules:**
+- Cannot cancel after arrival
+- All status changes create timeline events
 
-- `booking.created` - New booking created
-- `booking.departed` - Cargo departed
-- `booking.arrived` - Cargo arrived
-- `booking.delivered` - Cargo delivered
-- `booking.cancelled` - Booking cancelled
+## Error Codes
+
+| Status | Type | Description |
+|--------|------|-------------|
+| 400 | VALIDATION_ERROR | Invalid request data |
+| 401 | UNAUTHORIZED | Missing or invalid authentication |
+| 404 | NOT_FOUND | Resource not found |
+| 409 | CONFLICT | Resource conflict (e.g., concurrent updates) |
+| 429 | RATE_LIMIT_EXCEEDED | Too many requests |
+| 500 | INTERNAL_ERROR | Server error |
+
+## Rate Limiting
+- 100 requests per 15 minutes per IP address
+- Rate limit headers included in responses
+
+## Idempotency
+- Use `Idempotency-Key` header for booking creation
+- Duplicate requests return cached response
+- Keys expire after 24 hours
+
+## Caching
+- Booking details cached for 1 hour
+- Route search results cached for 30 minutes
+- Cache automatically invalidated on updates
